@@ -6,4 +6,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    background-color: hsl(228, 6%, 8%);
+    color: hsl(228, 8%, 70%);
+    overflow-x: hidden;
 }
