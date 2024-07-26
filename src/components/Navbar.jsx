@@ -51,7 +51,7 @@ export default function Navbar() {
 
         {/* mobile */}
         
-          <div className={`absolute w-[250px] min-h-screen top-0 backdrop-blur-md duration-300 bg-black/15 ${menu? "right-0 opacity-100": "-right-72 opacity-0"}`}>
+          <div className={`absolute w-[250px] min-h-screen top-0 backdrop-blur-lg duration-300 bg-black/30 ${menu? "right-0 opacity-100": "-right-72 opacity-0"}`}>
             <div className="flex flex-col items-start gap-y-10 pl-10 text-title pt-32">
               <div className="absolute top-5 right-4 hover:text-green cursor-pointer" onClick={()=>setMenu(false)}>
                 <IoIosClose size={36} />

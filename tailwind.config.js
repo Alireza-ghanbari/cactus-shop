@@ -6,6 +6,7 @@ export default {
       colors: {
         title: "hsl(228, 8%, 98%)",
         green: "hsl(93, 58%, 66%)",
+        darkGrenn: "hsl(93, 50%, 48%)"
       },
       screens: {
         xs: "440px",
