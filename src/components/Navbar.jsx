@@ -23,13 +23,13 @@ export default function Navbar() {
           <a href="#news" className="hover:text-green duration-200 font-light">
             News
           </a>
-          <a href="" className="hover:text-green duration-200 font-light">
+          <a href="#shop" className="hover:text-green duration-200 font-light">
             Shop
           </a>
-          <a href="" className="hover:text-green duration-200 font-light">
+          <a href="#care" className="hover:text-green duration-200 font-light">
             Care
           </a>
-          <a href="" className="hover:text-green duration-200 font-light">
+          <a href="#cotact" className="hover:text-green duration-200 font-light">
             Contact
           </a>
         </div>
@@ -62,13 +62,13 @@ export default function Navbar() {
               <a href="#news" className="hover:text-green duration-200 w-full">
                 News
               </a>
-              <a href="" className="hover:text-green duration-200 w-full">
+              <a href="#shop" className="hover:text-green duration-200 w-full">
                 Shop
               </a>
-              <a href="" className="hover:text-green duration-200 w-full">
+              <a href="#care" className="hover:text-green duration-200 w-full">
                 Care
               </a>
-              <a href="" className="hover:text-green duration-200 w-full">
+              <a href="#contact" className="hover:text-green duration-200 w-full">
                 Contact
               </a>
             </div>

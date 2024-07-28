@@ -3,23 +3,32 @@ import homeImage from "../assets/home-cactus.png";
 import newImage1 from "../assets/new-cactus-1.png";
 import newImage2 from "../assets/new-cactus-2.png";
 import newImage3 from "../assets/new-cactus-3.png";
+import shopcactus1 from "../assets/shop-cactus-1.png";
+import shopcactus2 from "../assets/shop-cactus-2.png";
+import shopcactus3 from "../assets/shop-cactus-3.png";
+import shopcactus4 from "../assets/shop-cactus-4.png";
+import shopcactus5 from "../assets/shop-cactus-5.png";
 import { FaArrowRight } from "react-icons/fa";
+import { IoBagOutline } from "react-icons/io5";
 
 export default function Home() {
   return (
     <div className="max-w-7xl mx-auto px-3 xs:px-8 py-5 lg:pt-20">
       {/* hero section */}
-      <div className="flex lg:flex-row flex-col items-center justify-center gap-7" id="home">
+      <div
+        className="flex lg:flex-row flex-col items-center justify-center gap-7"
+        id="home"
+      >
         <div className="w-[250px] sm:w-[400px] lg:w-[450px]">
           <img src={homeImage} className="image-home -z-50" />
         </div>
         <div className="flex items-center lg:items-start  justify-center flex-col gap-4 lg:gap-0">
-          <h2 className="text-title text-3xl sm:text-5xl lg:text-[4rem] font-bold">
+          <h2 className="text-title text-3xl sm:text-5xl lg:text-[4rem] font-bold text-center lg:text-start">
             ORNAMENTAL <br />
             <span className="text-darkGrenn">PLANTS</span> FOR <br />
             YOUR HOME
           </h2>
-          <p className="text-xs sm:text-md mt-5">
+          <p className="text-xs sm:text-md mt-5 text-center lg:text-start">
             We design ornamental plants for your home in-house for an <br />
             original style and quality you won't find anywhere else.
           </p>
@@ -38,12 +47,15 @@ export default function Home() {
       </div>
 
       {/* news section */}
-      <div className="flex lg:flex-row flex-col items-center justify-center lg:mt-48 mt-20 gap-4 pb-10" id="news">
+      <div
+        className="flex lg:flex-row flex-col items-center justify-center lg:mt-48 mt-20 gap-4 pb-10"
+        id="news"
+      >
         <div className="flex-1">
-          <h2 className="text-title font-bold tracking-wider text-3xl sm:text-4xl md:text-4xl pr-7">
+          <h2 className="text-title font-bold tracking-wider text-2xl sm:text-4xl md:text-4xl pr-7 text-center lg:text-start">
             NEW PLANTS FOR YOUR HOME
           </h2>
-          <p className="tracking-normal mt-5 mb-5 lg:mb-0 pr-4 text-xs xs:text-sm sm:text-[16px]">
+          <p className="tracking-normal mt-5 mb-5 lg:mb-0 pr-4 text-xs xs:text-sm sm:text-[16px] text-center lg:text-start">
             Select new ornamental plants for home decoration and obtain an
             atmosphere of harmony and freshness.
           </p>
@@ -65,7 +77,7 @@ export default function Home() {
                 className="absolute top-[-4.5rem] left-0 right-0 w-[180px] mx-auto transition-all duration-300 hover:-translate-y-3 "
               />
               <h2 className="text-title text-xl text-center">
-              Lily Pad Succulent
+                Lily Pad Succulent
               </h2>
             </div>
             <div className="relative w-[200px] news-card border-2 border-green pt-[9rem] px-3 pb-6 rounded-3xl -rotate-6 ">
@@ -73,9 +85,84 @@ export default function Home() {
                 src={newImage3}
                 className="absolute top-[-4.5rem] left-0 right-0 w-[180px] mx-auto transition-all duration-300 hover:-translate-y-3"
               />
-              <h2 className="text-title text-xl text-center">
-              Rebutia Cactus
-              </h2>
+              <h2 className="text-title text-xl text-center">Rebutia Cactus</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* shop section */}
+      <div
+        className="flex flex-col items-center justify-center lg:mt-48 mt-20 gap-2 pb-10"
+        id="shop"
+      >
+        <h2 className="text-title text-4xl font-bold text-center mb-32">
+          THE BEST PLANTS
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 gap-y-24">
+          <div className="relative w-[200px] news-card border-2 border-green pt-[9rem] px-3 pb-6 rounded-3xl">
+            <img
+              src={shopcactus1}
+              className="absolute top-[-4.5rem] left-0 right-0 w-[180px] mx-auto transition-all duration-300 hover:-translate-y-3"
+            />
+            <h2 className="text-title text-xl">Gymnocalycium Cactus</h2>
+            <div className="flex justify-between items-center">
+              <p className="font-bold text-title text-xl mt-2">15$</p>
+              <div className="p-[6px] bg-title rounded-full translate-y-1 cursor-pointer">
+                <IoBagOutline color="black" size={22} />
+              </div>
+            </div>
+          </div>
+          <div className="relative w-[200px] news-card border-2 border-green pt-[9rem] px-3 pb-6 rounded-3xl">
+            <img
+              src={shopcactus2}
+              className="absolute top-[-4.5rem] left-0 right-0 w-[180px] mx-auto transition-all duration-300 hover:-translate-y-3"
+            />
+            <h2 className="text-title text-xl">Gymnocalycium Cactus</h2>
+            <div className="flex justify-between items-center">
+              <p className="font-bold text-title text-xl mt-2">15$</p>
+              <div className="p-[6px] bg-title rounded-full translate-y-1 cursor-pointer">
+                <IoBagOutline color="black" size={22} />
+              </div>
+            </div>
+          </div>
+          <div className="relative w-[200px] news-card border-2 border-green pt-[9rem] px-3 pb-6 rounded-3xl">
+            <img
+              src={shopcactus3}
+              className="absolute top-[-4.5rem] left-0 right-0 w-[180px] mx-auto transition-all duration-300 hover:-translate-y-3"
+            />
+            <h2 className="text-title text-xl">Gymnocalycium Cactus</h2>
+            <div className="flex justify-between items-center">
+              <p className="font-bold text-title text-xl mt-2">15$</p>
+              <div className="p-[6px] bg-title rounded-full translate-y-1 cursor-pointer">
+                <IoBagOutline color="black" size={22} />
+              </div>
+            </div>
+          </div>
+          <div className="relative w-[200px] news-card border-2 border-green pt-[9rem] px-3 pb-6 rounded-3xl">
+            <img
+              src={shopcactus4}
+              className="absolute top-[-4.5rem] left-0 right-0 w-[180px] mx-auto transition-all duration-300 hover:-translate-y-3"
+            />
+            <h2 className="text-title text-xl">Gymnocalycium Cactus</h2>
+            <div className="flex justify-between items-center">
+              <p className="font-bold text-title text-xl mt-2">15$</p>
+              <div className="p-[6px] bg-title rounded-full translate-y-1 cursor-pointer">
+                <IoBagOutline color="black" size={22} />
+              </div>
+            </div>
+          </div>
+          <div className="relative w-[200px] news-card border-2 border-green pt-[9rem] px-3 pb-6 rounded-3xl">
+            <img
+              src={shopcactus5}
+              className="absolute top-[-4.5rem] left-0 right-0 w-[180px] mx-auto transition-all duration-300 hover:-translate-y-3"
+            />
+            <h2 className="text-title text-xl">Gymnocalycium Cactus</h2>
+            <div className="flex justify-between items-center">
+              <p className="font-bold text-title text-xl mt-2">15$</p>
+              <div className="p-[6px] bg-title rounded-full translate-y-1 cursor-pointer">
+                <IoBagOutline color="black" size={22} />
+              </div>
             </div>
           </div>
         </div>
