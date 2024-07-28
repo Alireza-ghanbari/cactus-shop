@@ -9,9 +9,13 @@ import shopcactus3 from "../assets/shop-cactus-3.png";
 import shopcactus4 from "../assets/shop-cactus-4.png";
 import shopcactus5 from "../assets/shop-cactus-5.png";
 import carecactus from "../assets/care-cactus.png";
+import contactcactus from "../assets/contact-cactus.png";
 import { FaArrowRight } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
 import { ImCheckboxChecked } from "react-icons/im";
+import { MdEmail } from "react-icons/md";
+import { BiLogoTelegram, BiSolidPhoneCall } from "react-icons/bi";
+import { BsTelegram } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -180,6 +184,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/* care section */}
       <div
         className="flex flex-col items-center justify-center lg:mt-32 mt-14 gap-2 pb-10"
         id="care"
@@ -240,6 +245,45 @@ export default function Home() {
               Do not expose to high temperatures, as succulent plants are not
               fans of extremes.
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* contact section */}
+      <div
+        className="flex flex-col items-center justify-center lg:mt-32 mt-14 gap-2 pb-10"
+        id="contact"
+      >
+        <h2 className="text-title text-2xl xs:text-4xl font-bold text-center mb-20">
+          YOU WANT A CACTUS <br /> CONTACT US
+        </h2>
+        <div className="flex lg:flex-row flex-col items-center justify-center">
+          <div className="flex items-center lg:items-start flex-col gap-8 flex-1">
+            <div className="flex items-center lg:items-start flex-col gap-2">
+              <h2 className="text-title text-xl font-semibold">Write to us</h2>
+              <div className="flex items-center lg:items-start gap-2">
+                <BiLogoTelegram className="text-darkGrenn cursor-pointer" size={22} />
+                <MdEmail className="text-darkGrenn cursor-pointer" size={22} />
+                <BiSolidPhoneCall className="text-darkGrenn cursor-pointer" size={22} />
+              </div>
+            </div>
+            <div className="flex items-center lg:items-start flex-col gap-1">
+              <h2 className="text-title text-xl font-semibold">Call us at the numbers</h2>
+              <div className="flex flex-col items-center lg:items-start text-sm">
+                 <p>+00-987-7654-321</p>
+                 <p>+11-012345</p>
+              </div>
+            </div>
+            <div className="flex items-center lg:items-start flex-col gap-1">
+              <h2 className="text-title text-xl font-semibold">Find us here</h2>
+              <div className="flex flex-col text-sm items-center lg:items-start">
+                <p>Lima - Sun City - Peru</p>
+                <p>Av. Moon #4321</p>
+              </div>
+            </div>
+          </div>
+          <div className="w-[250px] sm:w-[400px] lg:w-[700px] flex-1 mt-12 lg:mt-0">
+            <img src={contactcactus} className="image-home -z-50" />
           </div>
         </div>
       </div>
