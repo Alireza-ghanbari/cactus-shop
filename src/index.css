@@ -1,20 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-family: "Montserrat", sans-serif;
-    background-color: hsl(228, 6%, 8%);
-    color: hsl(228, 8%, 70%);
-    overflow-x: hidden !important;
+html {
+  scroll-behavior: smooth;
 }
 
-.go-to-shop:hover > div > svg  {
-    rotate: -40deg;
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(228, 6%, 8%);
+  color: hsl(228, 8%, 70%);
+  overflow-x: hidden !important;
+}
+
+.go-to-shop:hover > div > svg {
+  rotate: -40deg;
 }
 
 .image-home {
-    filter: drop-shadow(0 0 48px hsla(93, 54%, 54%, .4));
+  filter: drop-shadow(0 0 48px hsla(93, 54%, 54%, 0.4));
+}
+
+.news-card {
+  background: linear-gradient(180deg, hsla(93, 8%, 8%), hsla(93, 40%, 30%));
 }
