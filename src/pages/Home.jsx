@@ -8,8 +8,10 @@ import shopcactus2 from "../assets/shop-cactus-2.png";
 import shopcactus3 from "../assets/shop-cactus-3.png";
 import shopcactus4 from "../assets/shop-cactus-4.png";
 import shopcactus5 from "../assets/shop-cactus-5.png";
+import carecactus from "../assets/care-cactus.png";
 import { FaArrowRight } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
+import { ImCheckboxChecked } from "react-icons/im";
 
 export default function Home() {
   return (
@@ -105,7 +107,9 @@ export default function Home() {
               src={shopcactus1}
               className="absolute top-[-4.5rem] left-0 right-0 w-[180px] mx-auto transition-all duration-300 hover:-translate-y-3"
             />
-            <h2 className="text-title text-xl">Gymnocalycium Cactus</h2>
+            <h2 className="text-title text-xl">
+              Gymnocalycium <br /> Cactus
+            </h2>
             <div className="flex justify-between items-center">
               <p className="font-bold text-title text-xl mt-2">15$</p>
               <div className="p-[6px] bg-title rounded-full translate-y-1 cursor-pointer">
@@ -118,7 +122,9 @@ export default function Home() {
               src={shopcactus2}
               className="absolute top-[-4.5rem] left-0 right-0 w-[180px] mx-auto transition-all duration-300 hover:-translate-y-3"
             />
-            <h2 className="text-title text-xl">Gymnocalycium Cactus</h2>
+            <h2 className="text-title text-xl">
+              Echeveria <br /> Succulent
+            </h2>
             <div className="flex justify-between items-center">
               <p className="font-bold text-title text-xl mt-2">15$</p>
               <div className="p-[6px] bg-title rounded-full translate-y-1 cursor-pointer">
@@ -131,9 +137,11 @@ export default function Home() {
               src={shopcactus3}
               className="absolute top-[-4.5rem] left-0 right-0 w-[180px] mx-auto transition-all duration-300 hover:-translate-y-3"
             />
-            <h2 className="text-title text-xl">Gymnocalycium Cactus</h2>
+            <h2 className="text-title text-xl">
+              Ferocactus <br /> Cactus
+            </h2>
             <div className="flex justify-between items-center">
-              <p className="font-bold text-title text-xl mt-2">15$</p>
+              <p className="font-bold text-title text-xl mt-2">10$</p>
               <div className="p-[6px] bg-title rounded-full translate-y-1 cursor-pointer">
                 <IoBagOutline color="black" size={22} />
               </div>
@@ -144,9 +152,11 @@ export default function Home() {
               src={shopcactus4}
               className="absolute top-[-4.5rem] left-0 right-0 w-[180px] mx-auto transition-all duration-300 hover:-translate-y-3"
             />
-            <h2 className="text-title text-xl">Gymnocalycium Cactus</h2>
+            <h2 className="text-title text-xl">
+              Key Lime Pie <br /> Succulent
+            </h2>
             <div className="flex justify-between items-center">
-              <p className="font-bold text-title text-xl mt-2">15$</p>
+              <p className="font-bold text-title text-xl mt-2">10$</p>
               <div className="p-[6px] bg-title rounded-full translate-y-1 cursor-pointer">
                 <IoBagOutline color="black" size={22} />
               </div>
@@ -157,12 +167,78 @@ export default function Home() {
               src={shopcactus5}
               className="absolute top-[-4.5rem] left-0 right-0 w-[180px] mx-auto transition-all duration-300 hover:-translate-y-3"
             />
-            <h2 className="text-title text-xl">Gymnocalycium Cactus</h2>
+            <h2 className="text-title text-xl">
+              Melocactus <br /> Cactus
+            </h2>
             <div className="flex justify-between items-center">
               <p className="font-bold text-title text-xl mt-2">15$</p>
               <div className="p-[6px] bg-title rounded-full translate-y-1 cursor-pointer">
                 <IoBagOutline color="black" size={22} />
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="flex flex-col items-center justify-center lg:mt-32 mt-14 gap-2 pb-10"
+        id="care"
+      >
+        <h2 className="text-title text-2xl xs:text-4xl font-bold text-center mb-20">
+          CARE AND HEALTH FOR <br /> YOUR CACTUS
+        </h2>
+        <div className="flex lg:flex-row flex-col items-center justify-center gap-7">
+          <div className="w-[250px] sm:w-[400px] lg:w-[450px] flex-1">
+            <img src={carecactus} className="image-home -z-50" />
+          </div>
+          <div className="flex items-start flex-col gap-8 flex-1">
+            <div className="flex items-start gap-2 ">
+              <div>
+                <ImCheckboxChecked
+                  className="text-darkGrenn translate-y-1"
+                  size={20}
+                />
+              </div>
+              In cold times, add water once a month and during the summer do it
+              when the soil is very dry.
+            </div>
+            <div className="flex items-start gap-2">
+              <div>
+                <ImCheckboxChecked
+                  className="text-darkGrenn translate-y-1"
+                  size={20}
+                />
+              </div>
+              Have good drainage so that the cactus does not accumulate water.
+            </div>
+            <div className="flex items-start gap-2 ">
+              <div>
+                <ImCheckboxChecked
+                  className="text-darkGrenn translate-y-1"
+                  size={20}
+                />
+              </div>
+              Place your cactus or succulent in a location with indirect light.
+            </div>
+            <div className="flex items-start gap-2 ">
+              <div>
+                <ImCheckboxChecked
+                  className="text-darkGrenn translate-y-1"
+                  size={20}
+                />
+              </div>
+              Do not water more than necessary, as it can accumulate too much
+              water and the plant will rot.
+            </div>
+            <div className="flex items-start gap-2 ">
+              <div>
+                <ImCheckboxChecked
+                  className="text-darkGrenn translate-y-1"
+                  size={20}
+                />
+              </div>
+              Do not expose to high temperatures, as succulent plants are not
+              fans of extremes.
             </div>
           </div>
         </div>
