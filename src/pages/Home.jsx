@@ -8,7 +8,7 @@ export default function Home() {
       {/* hero section */}
       <div className="flex lg:flex-row flex-col items-center justify-center gap-7">
         <div className="w-[250px] sm:w-[400px] lg:w-[450px]">
-          <img src={homeImage} className="" />
+          <img src={homeImage} className="image-home -z-50" />
         </div>
         <div className="flex items-center lg:items-start  justify-center flex-col gap-4 lg:gap-0">
           <h2 className="text-title text-3xl sm:text-5xl lg:text-[4rem] font-bold">
@@ -16,14 +16,14 @@ export default function Home() {
             <span className="text-darkGrenn">PLANTS</span> FOR <br />
             YOUR HOME
           </h2>
-          <p className="text-xs sm:text-md">
+          <p className="text-xs sm:text-md mt-5">
             We design ornamental plants for your home in-house for an <br />
             original style and quality you won't find anywhere else.
           </p>
-          <div className="mt-5 lg:mt-16">
-            <div className="flex items-center gap-5 xs:gap-14 flex-col xs:flex-row">
+          <div className="mt-5 lg:mt-12">
+            <div className="flex items-center gap-5 xs:gap-14 flex-col xs:flex-row go-to-shop">
                 <div className=" flex rounded-full bg-title text-black gap-2 p-2 items-center justify-between pr-4 font-bold cursor-pointer">
-                    <FaArrowRight className="bg-darkGrenn w-8 h-8 p-2 rounded-full" /> 
+                    <FaArrowRight className="bg-darkGrenn w-8 h-8 p-2 rounded-full transition-all duration-300" /> 
                     GO TO SHOP
                 </div>
                 <p className="font-bold underline tracking-tight hover:text-title duration-200 cursor-pointer">MORE DETAILS</p>
