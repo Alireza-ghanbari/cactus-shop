@@ -10,12 +10,14 @@ import shopcactus4 from "../assets/shop-cactus-4.png";
 import shopcactus5 from "../assets/shop-cactus-5.png";
 import carecactus from "../assets/care-cactus.png";
 import contactcactus from "../assets/contact-cactus.png";
-import { FaArrowRight } from "react-icons/fa";
+import favicon from "../assets/favicon.png";
+import { FaArrowRight, FaFacebook } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
 import { ImCheckboxChecked } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
 import { BiLogoTelegram, BiSolidPhoneCall } from "react-icons/bi";
-import { BsTelegram } from "react-icons/bs";
+import {  BsTwitterX } from "react-icons/bs";
+import { AiFillInstagram } from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -262,16 +264,24 @@ export default function Home() {
             <div className="flex items-center lg:items-start flex-col gap-2">
               <h2 className="text-title text-xl font-semibold">Write to us</h2>
               <div className="flex items-center lg:items-start gap-2">
-                <BiLogoTelegram className="text-darkGrenn cursor-pointer" size={22} />
+                <BiLogoTelegram
+                  className="text-darkGrenn cursor-pointer"
+                  size={22}
+                />
                 <MdEmail className="text-darkGrenn cursor-pointer" size={22} />
-                <BiSolidPhoneCall className="text-darkGrenn cursor-pointer" size={22} />
+                <BiSolidPhoneCall
+                  className="text-darkGrenn cursor-pointer"
+                  size={22}
+                />
               </div>
             </div>
             <div className="flex items-center lg:items-start flex-col gap-1">
-              <h2 className="text-title text-xl font-semibold">Call us at the numbers</h2>
+              <h2 className="text-title text-xl font-semibold">
+                Call us at the numbers
+              </h2>
               <div className="flex flex-col items-center lg:items-start text-sm">
-                 <p>+00-987-7654-321</p>
-                 <p>+11-012345</p>
+                <p>+00-987-7654-321</p>
+                <p>+11-012345</p>
               </div>
             </div>
             <div className="flex items-center lg:items-start flex-col gap-1">
@@ -287,6 +297,69 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* footer */}
+      <div className="flex lg:flex-row flex-col items-start lg:items-center lg:justify-between lg:mt-48 mt-14 gap-10 lg:gap-2 pb-12">
+        <div className="flex flex-col items-start justify-start gap-5 flex-1">
+          <div className="flex items-center justify-start">
+            <img src={favicon} className="w-8 h-8 translate-y-[-3px]" />
+            <h1 className="font-semibold text-xl text-title xs:tracking-widest">
+              Cactus
+            </h1>
+          </div>
+          <p className="text-sm lg:ml-3">
+            Choose the best <br /> plants for your home.
+          </p>
+        </div>
+
+        <div className="flex flex-wrap flex-col sm:flex-row justify-start lg:justify-between lg:items-start flex-1 gap-10 lg:gap-0">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-title text-lg font-semibold tracking-widest mb-3">
+              COMPANY
+            </h2>
+            <p className="text-[15px] tracking-wide font-light hover:text-title duration-100 cursor-pointer">
+              About Us
+            </p>
+            <p className="text-[15px] tracking-wide font-light hover:text-title duration-100 cursor-pointer">
+              Products
+            </p>
+            <p className="text-[15px] tracking-wide font-light hover:text-title duration-100 cursor-pointer">
+              Features
+            </p>
+          </div>
+          <div className="flex flex-col gap-1">
+            <h2 className="text-title text-lg font-semibold tracking-widest mb-3">
+              INFORMATION
+            </h2>
+            <p className="text-[15px] tracking-wide font-light hover:text-title duration-100 cursor-pointer">
+              Blogs & News
+            </p>
+            <p className="text-[15px] tracking-wide font-light hover:text-title duration-100 cursor-pointer">
+              Contacts Us
+            </p>
+            <p className="text-[15px] tracking-wide font-light hover:text-title duration-100 cursor-pointer">
+              FAQs
+            </p>
+          </div>
+          <div className="flex flex-col gap-1">
+            <h2 className="text-title text-lg font-semibold tracking-widest mb-3">
+              SOCIAL MEDIA
+            </h2>
+            <div className="flex gap-3">
+              <p className="text-[15px] tracking-wide font-light hover:text-title duration-100 cursor-pointer">
+                <FaFacebook size={21} />
+              </p>
+              <p className="text-[15px] tracking-wide font-light hover:text-title duration-100 cursor-pointer">
+                <AiFillInstagram size={21} />
+              </p>
+              <p className="text-[15px] tracking-wide font-light hover:text-title duration-100 cursor-pointer">
+                <BsTwitterX size={21} />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 className="text-center text-sm flex items-center justify-center gap-1 mt-4 pt-5 border-t border-title flex-wrap">All Rights Reserved By Alireza Ghanbari</h4>
     </div>
   );
 }
