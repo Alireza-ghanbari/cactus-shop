@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import homeImage from "../assets/home-cactus.png";
 import newImage1 from "../assets/new-cactus-1.png";
 import newImage2 from "../assets/new-cactus-2.png";
@@ -11,15 +11,21 @@ import shopcactus5 from "../assets/shop-cactus-5.png";
 import carecactus from "../assets/care-cactus.png";
 import contactcactus from "../assets/contact-cactus.png";
 import favicon from "../assets/favicon.png";
-import { FaArrowRight, FaFacebook } from "react-icons/fa";
+import { FaArrowRight, FaArrowUp, FaFacebook } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
 import { ImCheckboxChecked } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
 import { BiLogoTelegram, BiSolidPhoneCall } from "react-icons/bi";
-import {  BsTwitterX } from "react-icons/bs";
+import { BsTwitterX } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
 
 export default function Home() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+    
+  window.addEventListener('scroll',()=>{
+    const position = window.pageYOffset;
+    setScrollPosition(position)
+})
   return (
     <div className="max-w-7xl mx-auto px-3 xs:px-8 py-5 lg:pt-20">
       {/* hero section */}
@@ -359,7 +365,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <h4 className="text-center text-sm flex items-center justify-center gap-1 mt-4 pt-5 border-t border-title flex-wrap">All Rights Reserved By Alireza Ghanbari</h4>
+      <h4 className="text-center text-sm flex items-center justify-center gap-1 mt-4 pt-5 border-t border-title flex-wrap">
+        All Rights Reserved By Alireza Ghanbari
+      </h4>
+
+      
+      <div onClick={()=>scrollTo(0, 0)} className={`fixed bottom-12 lg:bottom-16 right-5 lg:right-12 text-white duration-500 p-2 bg-darkGrenn rounded-full cursor-pointer hover:opacity-70 ${scrollPosition < 1100 ? 'opacity-0' : 'opacity-60'
+      }`}><FaArrowUp size={24} color="black" /></div>
     </div>
   );
 }
