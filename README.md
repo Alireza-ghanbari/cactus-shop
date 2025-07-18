@@ -1,8 +1,20 @@
-# React + Vite
+Cactus Shop is a responsive e-commerce landing page built with React and Tailwind CSS. It showcases featured plant products, promotions, and contact details within a clean, modern UI. The app uses React’s component-based architecture for modularity and Tailwind CSS for fast, utility-first styling. JavaScript enhances interactivity, providing a smooth user experience across devices.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Key Features:
 
-Currently, two official plugins are available:
+Component-driven React architecture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Responsive design powered by Tailwind CSS
+
+Dynamic UI with interactive elements
+
+Modern layout for online plant store presentation
+
+Tech Stack:
+
+React
+
+Tailwind CSS
+
+JavaScript (ES6+)
+
